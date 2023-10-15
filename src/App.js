@@ -1,19 +1,15 @@
 import React from "react";
-import { useRoutes } from "react-router";
-import Router from "./routes/Router";
-
+import { useRoutes } from "react-router-dom";
+import routes from "./routes/Router";  // Asegúrate de que esta ruta de importación sea correcta
 
 function App() {
-  const routing = useRoutes(Router);
-
+  const routeElement = useRoutes(routes);
+  
   return (
-    <React.Fragment>
-      {routing}
-    </React.Fragment>
+    <div className="App">
+      {routeElement}
+    </div>
   );
 }
 
 export default App;
-
-
-

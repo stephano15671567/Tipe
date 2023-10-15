@@ -1,13 +1,14 @@
+
 import { Backdrop, CircularProgress } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
+import Header from "./Header";  
 
 function MainLayout() {
-  const [loading, isLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      isLoading(false);
+      setLoading(false);
     }, 2000);
   }, []);
 
@@ -15,15 +16,15 @@ function MainLayout() {
     <>
       {!loading ? (
         <>
-        <Header />
-          <Outlet />
+          <Header />
+          <div style={{ padding: '20px' }}>  {/* Agregar un padding para mejorar la presentación */}
+            <Outlet />
+          </div>
         </>
       ) : (
-        <Backdrop
-          sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
-          open={true}
-        >
+        <Backdrop open={true} style={{ backgroundColor: '#a986c5', color: 'white' }}>
           <CircularProgress color="inherit" />
+          <p style={{ marginLeft: '20px' }}>Cargando...</p>  {/* Personalizar el mensaje de carga */}
         </Backdrop>
       )}
     </>
