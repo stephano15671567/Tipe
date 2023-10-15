@@ -11,6 +11,7 @@ import servicio8 from './images/servicio8.jpg';
 import servicio9 from './images/servicio9.jpg';
 import servicio10 from './images/servicio10.jpg';
 import servicio11 from './images/servicio11.jpg';
+import servicio12 from './images/servicio12.jpg';
 
 
 // ... Continuar importando todas las imágenes necesarias
@@ -19,7 +20,7 @@ const servicios = [
     {
         id: 1,
         title: 'Babyliss',
-        description: 'Descripción detallada del servicio 1.',
+        description: 'Tecnica muy natural de transparencias sin dejar marcas.',
         price: '$20',
         image: servicio1,
         color: 'rgb(255, 132, 203)' 
@@ -28,7 +29,7 @@ const servicios = [
     {
         id: 2,
         title: 'Balayage',
-        description: 'Descripción detallada del servicio 2.',
+        description: 'Efecto de color para lograr un degrade de medios a puntas, con su base mas oscura.',
         price: '$40',
         image: servicio2,
         color: 'rgb(255, 132, 203)' 
@@ -37,7 +38,7 @@ const servicios = [
     {
         id: 3,
         title: 'Baño de color',
-        description: 'Descripción detallada del servicio 2.',
+        description: 'Servicio donde se tonaliza el cabello de acuerdo a una formula de color o cambiar el matiz',
         price: '$40',
         image: servicio3,
         color: 'rgb(255, 132, 203)' 
@@ -45,7 +46,7 @@ const servicios = [
     {
         id: 4,
         title: 'Visos',
-        description: 'Descripción detallada del servicio 2.',
+        description: 'Efecto de iluminación con o sin contraste, de diferentes grosores',
         price: '$40',
         image: servicio4,
         color: 'rgb(255, 132, 203)' 
@@ -53,7 +54,7 @@ const servicios = [
     {
         id: 5,
         title: 'Coloracion',
-        description: 'Descripción detallada del servicio 2.',
+        description: 'Servicio de color global o solo en crecimiento.',
         price: '$40',
         image: servicio5,
         color: 'rgb(255, 132, 203)'  
@@ -61,7 +62,7 @@ const servicios = [
     {
         id: 6,
         title: 'Cortes',
-        description: 'Descripción detallada del servicio 2.',
+        description: 'Tecnica exclusiva para cada tipo de cabello, para conseguir el resultado deseado',
         price: '$40',
         image: servicio6,
         color: 'rgb(255, 132, 203)' 
@@ -69,7 +70,7 @@ const servicios = [
     {
         id: 7,
         title: 'Peinados',
-        description: 'Descripción detallada del servicio 2.',
+        description: '',
         price: '$40',
         image: servicio7,
         color: 'rgb(255, 132, 203)' 
@@ -105,6 +106,14 @@ const servicios = [
         description: 'Descripción detallada del servicio 2.',
         price: '$40',
         image: servicio11,
+        color: 'rgb(255, 132, 203)' 
+    },
+    {
+        id: 12,
+        title: 'Cirugía Capilar',
+        description: 'Descripción detallada del servicio 2.',
+        price: '$40',
+        image: servicio12,
         color: 'rgb(255, 132, 203)' 
     },
     
