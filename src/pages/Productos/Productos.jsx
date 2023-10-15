@@ -12,6 +12,7 @@ import producto9 from './images/producto9.jpg';
 import producto10 from './images/producto10.jpg';
 import producto11 from './images/producto11.jpg';
 import producto12 from './images/producto12.jpg';
+import producto13 from './images/producto13.jpg';
 // ... Continuar importando todas las imágenes de productos necesarias
 
 const productos = [
@@ -109,6 +110,14 @@ const productos = [
         description: 'Descripción detallada del producto 12.',
         price: '$30',
         image: producto12,
+        color: 'rgb(255, 132, 203)' 
+    },
+    {
+        id: 13,
+        title: 'Producto 13',
+        description: 'Descripción detallada del producto 13.',
+        price: '$30',
+        image: producto13,
         color: 'rgb(255, 132, 203)' 
     },
     // ... Agregar más productos según sea necesario
