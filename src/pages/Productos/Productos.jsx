@@ -13,113 +13,107 @@ import producto10 from './images/producto10.jpg';
 import producto11 from './images/producto11.jpg';
 import producto12 from './images/producto12.jpg';
 import producto13 from './images/producto13.jpg';
+import SocialMediaButtons from '../Servicios/images/SocialMediaButtons';
 // ... Continuar importando todas las imágenes de productos necesarias
 
 const productos = [
     {
         id: 1,
-        title: 'Producto 1',
-        description: 'Descripción detallada del producto 1.',
-        price: '$20',
+        title: 'Moroccanoil Spray voluminizador 160ml',
+        description: 'Voluminizador para revivir un cabello fino y sin vida. Este spray ultraligero para dar cuerpo realza el cabello para ofrecerle hasta un 50% más de volumen, mientras mantiene el movimiento y la suavidad al tacto, desde las raíces hasta las puntas.',
+        price: '$27.990',
         image: producto1,
         color: 'rgb(255, 132, 203)' // Puedes cambiar el color según lo necesites
     },
     {
         id: 2,
-        title: 'Producto 2',
-        description: 'Descripción detallada del producto 2.',
-        price: '$30',
+        title: 'SPRAY PROTECCIÓN Y PREVENCIÓN',
+        description: 'Spray Protección y Prevención ayuda a evitar los tonos cobrizos y la decoloración del tinte al proteger el cabello contra los factores ambientales que lo debilitan diariamente. ',
+        price: '$27.990',
         image: producto2,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 3,
-        title: 'Producto 3',
-        description: 'Descripción detallada del producto 2.',
-        price: '$30',
+        title: 'TRATAMIENTO MOROCCANOIL 100ML',
+        description: 'Obtenga el cabello sano, brillante y sedoso que siempre ha deseado.El Tratamiento Moroccanoil ha sido el pionero en el mundo del cuidado del cabello a base de aceites y empezó todo el ruido alrededor del aceite de argán.',
+        price: '$39.990',
         image: producto3,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 4,
-        title: 'Producto 4',
-        description: 'Descripción detallada del producto 4.',
-        price: '$30',
+        title: 'MOROCCANOIL CREMA MOLDEADORA DE RIZOS 250ML',
+        description: 'Active y defina los rizos fácilmente mientras hidrata el cabello. La Crema Moldeadora de Rizos Moroccanoil® es uno de nuestros productos más populares para los rizos. ',
+        price: '$31.990',
         image: producto4,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 5,
-        title: 'Producto 5',
-        description: 'Descripción detallada del producto 5.',
-        price: '$30',
+        title: 'MOROCCANOIL CONCENTRADO PARA EL SECADO 50ML',
+        description: 'Específicamente formulado para cabellos rebeldes, altamente indisciplinados. Moroccanoil Blow Dry Concentrate controla el encrespamiento y facilita los secados. ',
+        price: '$27.990',
         image: producto5,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 6,
-        title: 'Producto 6',
-        description: 'Descripción detallada del producto 6.',
-        price: '$30',
+        title: 'OLAPLEX N°4 BOND MAINTENANCE SHAMPOO 250ML',
+        description: 'Olaplex Nº4 Shampoo protege y repara el cabello dañado, los puntas abiertas y el frizz al re-conectar los enlaces rotos. Shampoo altamente humectante y reparador dejar el cabello fácil de manejar, brillante y saludable en cada uso. ',
+        price: '$33.990',
         image: producto6,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 7,
-        title: 'Producto 7',
-        description: 'Descripción detallada del producto 7.',
-        price: '$30',
+        title: 'OLAPLEX Nº4D SHAMPOO SECO 178G.',
+        description: 'Tecnología de limpieza en seco ligera como el aire para que el cuero cabelludo y cabello que se siente como recién lavado. Este shampoo seco de Olaplex es saludable para el cuero cabelludo está clínicamente probado y no obstruye los poros ni deja residuo blanco. Ya no tendrás más raíces secas y con residuo empolvado ni acumulación de producto. Nº.4D ha demostrado que deja el cabello con aspecto limpio.',
+        price: '$33.990',
         image: producto7,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 8,
-        title: 'Producto 8',
-        description: 'Descripción detallada del producto 8.',
-        price: '$30',
+        title: 'OLAPLEX NO.7 BONDING OIL 30ML',
+        description: 'Olaplex Nº7 es un aceite de peinado reparador, liviano y altamente concentrado. Aumenta drásticamente el brillo, suavidad y revive el color. Disminuye el frizz. Entrega protección termica hasta 230ºC',
+        price: '$33.990',
         image: producto8,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 9,
-        title: 'Producto 9',
-        description: 'Descripción detallada del producto 9.',
-        price: '$30',
+        title: 'OLAPLEX Nº9 BOND PROTECTOR SERUM 90 ML',
+        description: 'Protege tu cabello del daño diario con este serum ultraliviano, sin enjuague, libre de siliconas. Su escudo protege por hasta 48 horas de la contaminación y su protección térmica es hasta los 230ºC.',
+        price: '$33.990',
         image: producto9,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 10,
-        title: 'Producto 10',
-        description: 'Descripción detallada del producto 10.',
-        price: '$30',
+        title: 'BC COLOR FREEZE PH 4.5 TRATAMIENTO - 200ML',
+        description: 'Un color intenso y real convierte cualquier look en espectacular. Un buen colorista creará el equilibrio perfecto de tonos para complementar el estilo y color de piel del cliente.',
+        price: '$11.990',
         image: producto10,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 11,
-        title: 'Producto 11',
-        description: 'Descripción detallada del producto 11.',
-        price: '$30',
+        title: 'BC COLOR FREEZE PH 4.5 ACONDICIONADOR EN SPRAY- 200ML',
+        description: 'Un color intenso y real convierte cualquier look en espectacular. Un buen colorista creará el equilibrio perfecto de tonos para complementar el estilo y color de piel del cliente.',
+        price: '$24.990',
         image: producto11,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 12,
-        title: 'Producto 12',
-        description: 'Descripción detallada del producto 12.',
-        price: '$30',
+        title: 'BC COLOR FREEZE PH 4.5 PROTECTOR DE BRILLO - 150ML',
+        description: 'Un color intenso y real convierte cualquier look en espectacular. Un buen colorista creará el equilibrio perfecto de tonos para complementar el estilo y color de piel del cliente.',
+        price: '$14.990',
         image: producto12,
         color: 'rgb(255, 132, 203)' 
     },
-    {
-        id: 13,
-        title: 'Producto 13',
-        description: 'Descripción detallada del producto 13.',
-        price: '$30',
-        image: producto13,
-        color: 'rgb(255, 132, 203)' 
-    },
+    
     // ... Agregar más productos según sea necesario
 ];
 
@@ -157,6 +151,7 @@ function Productos() {
                     </Grid>
                 ))}
             </Grid>
+            <SocialMediaButtons />
         </Container>
     );
 }

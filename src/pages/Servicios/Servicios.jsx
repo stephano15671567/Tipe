@@ -12,109 +12,106 @@ import servicio9 from './images/servicio9.jpg';
 import servicio10 from './images/servicio10.jpg';
 import servicio11 from './images/servicio11.jpg';
 import servicio12 from './images/servicio12.jpg';
-
+import SocialMediaButtons from './images/SocialMediaButtons';
 
 // ... Continuar importando todas las imágenes necesarias
 
 const servicios = [
     {
         id: 1,
-        title: 'Babyliss',
-        description: 'Tecnica muy natural de transparencias sin dejar marcas.',
-        price: '$20',
+        title: 'Babyligth',
+        description: 'Técnica de coloración que crea reflejos sutiles y naturales, imitando el cabello aclarado por el sol en la infancia.',
+        price: '$70.000',
         image: servicio1,
         color: 'rgb(255, 132, 203)' 
-        
     },
     {
         id: 2,
         title: 'Balayage',
-        description: 'Efecto de color para lograr un degrade de medios a puntas, con su base mas oscura.',
-        price: '$40',
+        description: 'Método de coloración a mano alzada que produce un efecto degradado natural, de raíces oscuras a puntas claras.',
+        price: '$70.000',
         image: servicio2,
         color: 'rgb(255, 132, 203)' 
-        
     },
     {
         id: 3,
         title: 'Baño de color',
-        description: 'Servicio donde se tonaliza el cabello de acuerdo a una formula de color o cambiar el matiz',
-        price: '$40',
+        description: 'Proceso para revitalizar el color del cabello, aportando brillo y tonalidad uniforme sin decoloración profunda.',
+        price: '$40.000',
         image: servicio3,
-        color: 'rgb(255, 132, 203)' 
+        color: 'rgb(255, 132, 203)'
     },
     {
         id: 4,
         title: 'Visos',
-        description: 'Efecto de iluminación con o sin contraste, de diferentes grosores',
-        price: '$40',
+        description: 'Técnica de coloración que añade reflejos o mechas para dar profundidad y dimensión al cabello.',
+        price: '$50.000',
         image: servicio4,
         color: 'rgb(255, 132, 203)' 
     },
     {
         id: 5,
         title: 'Coloracion',
-        description: 'Servicio de color global o solo en crecimiento.',
-        price: '$40',
+        description: 'Procedimiento completo para cambiar o mejorar el color del cabello de manera uniforme.',
+        price: '$40.000',
         image: servicio5,
-        color: 'rgb(255, 132, 203)'  
+        color: 'rgb(255, 132, 203)'
     },
     {
         id: 6,
         title: 'Cortes',
-        description: 'Tecnica exclusiva para cada tipo de cabello, para conseguir el resultado deseado',
-        price: '$40',
+        description: 'Servicio de corte de cabello, adaptado a las preferencias y estilo personal de cada cliente.',
+        price: '$20.000',
         image: servicio6,
-        color: 'rgb(255, 132, 203)' 
+        color: 'rgb(255, 132, 203)'
     },
     {
         id: 7,
         title: 'Peinados',
-        description: '',
-        price: '$40',
+        description: 'Creación de estilos y peinados para eventos especiales o para el día a día.',
+        price: '$25.000',
         image: servicio7,
-        color: 'rgb(255, 132, 203)' 
+        color: 'rgb(255, 132, 203)'
     },
-
     {
         id: 8,
         title: 'Ondulación de pestañas',
-        description: 'Descripción detallada del servicio 2.',
-        price: '$40',
+        description: 'Técnica para rizar las pestañas de forma natural, realzando la mirada sin necesidad de maquillaje.',
+        price: '$15.000',
         image: servicio8,
-        color: 'rgb(255, 132, 203)' 
+        color: 'rgb(255, 132, 203)'
     },
     {
         id: 9,
-        title: 'Ondulación de pestañas',
-        description: 'Descripción detallada del servicio 2.',
-        price: '$40',
+        title: 'Manicure',
+        description: 'Cuidado y embellecimiento de las uñas de las manos, incluyendo esmaltado y tratamiento de cutículas.',
+        price: '$16.000',
         image: servicio9,
-        color: 'rgb(255, 132, 203)'  
+        color: 'rgb(255, 132, 203)'
     },
     {
         id: 10,
         title: 'Pedicure',
-        description: 'Descripción detallada del servicio 2.',
-        price: '$40',
+        description: 'Servicio de belleza para los pies que incluye cuidado de uñas, cutículas y esmaltado.',
+        price: '$15.000',
         image: servicio10,
-        color: 'rgb(255, 132, 203)' 
+        color: 'rgb(255, 132, 203)'
     },
     {
         id: 11,
         title: 'Cirugía Capilar',
-        description: 'Descripción detallada del servicio 2.',
-        price: '$40',
+        description: 'Tratamiento intensivo para reparar y rejuvenecer el cabello dañado, mejorando su textura y apariencia.',
+        price: '$40.000',
         image: servicio11,
-        color: 'rgb(255, 132, 203)' 
+        color: 'rgb(255, 132, 203)'
     },
     {
         id: 12,
-        title: 'Cirugía Capilar',
-        description: 'Descripción detallada del servicio 2.',
-        price: '$40',
+        title: 'Alisado',
+        description: 'Proceso para alisar el cabello, reduciendo el frizz y proporcionando un acabado liso y manejable.',
+        price: '$50.000',
         image: servicio12,
-        color: 'rgb(255, 132, 203)' 
+        color: 'rgb(255, 132, 203)'
     },
     
 ];
@@ -152,6 +149,7 @@ function Servicios() {
                     </Grid>
                 ))}
             </Grid>
+            <SocialMediaButtons />
         </Container>
     );
 }

@@ -2,7 +2,10 @@ import React from 'react';
 import { Typography, Container, Box, Grid, Paper } from '@mui/material';
 import imagen1 from "./images/SalonEileen1.jpg";
 import imagen2 from "./images/SalonEileen2.jpg";
-
+import SocialMediaButtons from '../Servicios/images/SocialMediaButtons';
+import imagen10 from "./images/Moroccanoil.jpg";
+import imagen11 from "./images/marca2.jpg";
+import imagen12 from "./images/marca3.jpg";
 function Home() {
     return (
         <Container>
@@ -28,18 +31,19 @@ function Home() {
             <Grid container spacing={3} style={{ marginTop: '20px' }}>
                 <Grid item xs={12} sm={6} md={4}>
                     <Paper elevation={3} style={{ padding: '20px' }}>
-                        <img src="/images/example1.jpg" alt="Imagen Ejemplo 1" style={{ width: '100%', borderRadius: '10px' }} />
+                        <img src= {imagen10} alt="Imagen Ejemplo 1" style={{ width: '100%', borderRadius: '10px' }} />
                         <Typography variant="h6" gutterBottom>
                             Titulo 1
                         </Typography>
                         <Typography variant="body2">
+                            
                             Este es un espacio para texto. Puedes llenar este espacio con información adicional.
                         </Typography>
                     </Paper>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
                     <Paper elevation={3} style={{ padding: '20px' }}>
-                        <img src="/images/example2.jpg" alt="Imagen Ejemplo 2" style={{ width: '100%', borderRadius: '10px' }} />
+                        <img src= {imagen11} alt="Imagen Ejemplo 2" style={{ width: '100%', borderRadius: '10px' }} />
                         <Typography variant="h6" gutterBottom>
                             Titulo 2
                         </Typography>
@@ -50,7 +54,7 @@ function Home() {
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
                     <Paper elevation={3} style={{ padding: '20px' }}>
-                        <img src="/images/example3.jpg" alt="Imagen Ejemplo 3" style={{ width: '100%', borderRadius: '10px' }} />
+                        <img src= {imagen12} alt="Imagen Ejemplo 3" style={{ width: '100%', borderRadius: '10px' }} />
                         <Typography variant="h6" gutterBottom>
                             Titulo 3
                         </Typography>
@@ -77,6 +81,7 @@ function Home() {
                     ></iframe>
                 </div>
             </Box>
+            <SocialMediaButtons />
         </Container>
     );
 }

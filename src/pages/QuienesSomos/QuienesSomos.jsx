@@ -1,9 +1,20 @@
+
 import React from 'react';
-import { Typography, Container, Box, List, ListItem, ListItemText, Grid, ListItemIcon } from '@mui/material';
+import {
+  Typography,
+  Container,
+  Box,
+  List,
+  ListItem,
+  ListItemText,
+  Grid,
+  ListItemIcon,
+} from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import imagen11 from "../Servicios/images/servicio11.jpg";
 import imagen10 from "../Productos/images/producto3.jpg";
 import { makeStyles } from '@mui/styles';
+import SocialMediaButtons from '../Servicios/images/SocialMediaButtons'; // Importación ajustada
 
 const useStyles = makeStyles({
     container: {
@@ -32,6 +43,14 @@ const useStyles = makeStyles({
     },
     listItem: {
         paddingLeft: 0,
+    },
+    socialMediaContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        marginTop: '20px',
+    },
+    socialMediaButton: {
+        margin: '0 10px',
     },
 });
 
@@ -100,22 +119,73 @@ function QuienesSomos() {
                 <Box className={classes.imageBox}>
                     <img src={imagen11} alt="Nuestro Equipo" className={classes.image} />
                 </Box>
+                
             </Box>
-
-            {/* Sección adicional con imagen a la izquierda y texto a la derecha */}
             <Box className={classes.container}>
                 <Box className={classes.imageBox}>
                     <img src={imagen10} alt="Imagen Adicional" className={classes.image} />
                 </Box>
                 <Box className={classes.textBox}>
+                    
                     <Typography variant="h2" gutterBottom>
-                        Sección Adicional
+                        Productos
                     </Typography>
                     <Typography variant="body1" paragraph>
-                        Aquí puedes agregar más texto. Esta sección tiene la imagen a la izquierda y el texto a la derecha.
+                        Salón Eileen tambien cuenta con una gran variedad de productos, algunos de los productos mas relevantes son:
                     </Typography>
+                    <Grid container spacing={2}>
+                        <Grid item xs={6}>
+                            <List className={classes.list}>
+                                <ListItem className={classes.listItem}>
+                                    <ListItemIcon>
+                                        <ArrowForwardIosIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary="Shampoo" />
+                                </ListItem>
+                                <ListItem className={classes.listItem}>
+                                    <ListItemIcon>
+                                        <ArrowForwardIosIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary="Acondicionador" />
+                                </ListItem>
+                                <ListItem className={classes.listItem}>
+                                    <ListItemIcon>
+                                        <ArrowForwardIosIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary="Mascara de Tratamiento" />
+                                </ListItem>
+                            </List>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <List className={classes.list}>
+                                <ListItem className={classes.listItem}>
+                                    <ListItemIcon>
+                                        <ArrowForwardIosIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary="Protector Termico" />
+                                </ListItem>
+                                <ListItem className={classes.listItem}>
+                                    <ListItemIcon>
+                                        <ArrowForwardIosIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary="Cremas para Peinar" />
+                                </ListItem>
+                                <ListItem className={classes.listItem}>
+                                    <ListItemIcon>
+                                        <ArrowForwardIosIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary="Ampollas" />
+                                </ListItem>
+                            </List>
+                        </Grid>
+                    </Grid>
                 </Box>
             </Box>
+
+            <SocialMediaButtons />
+
+            {/* Additional section with image on the left and text on the right */}
+            
         </Container>
     );
 }
