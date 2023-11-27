@@ -13,9 +13,26 @@ import servicio10 from './images/servicio10.jpg';
 import servicio11 from './images/servicio11.jpg';
 import servicio12 from './images/servicio12.jpg';
 import SocialMediaButtons from './images/SocialMediaButtons';
-
+import { makeStyles } from '@mui/styles'; // Ensure you import makeStyles
 // ... Continuar importando todas las imágenes necesarias
-
+const useStyles = makeStyles({
+    card: {
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100%',
+    },
+    media: {
+      height: 140,
+    },
+    content: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+    },
+    price: {
+      marginTop: 'auto',
+    },
+  });
 const servicios = [
     {
         id: 1,
@@ -24,7 +41,9 @@ const servicios = [
         price: '$70.000',
         image: servicio1,
         color: 'rgb(255, 132, 203)' 
+        
     },
+    
     {
         id: 2,
         title: 'Balayage',
@@ -116,42 +135,45 @@ const servicios = [
     
 ];
 function Servicios() {
+    const classes = useStyles(); // Call useStyles to get the classes object
+  
     return (
-        <Container>
-            <Typography variant="h4" gutterBottom style={{ color: 'white' }}>
-                Nuestros Servicios
-            </Typography>
-            <Typography variant="subtitle1" paragraph style={{ color: 'white' }}>
-                Ofrecemos una variedad de servicios para satisfacer tus necesidades.
-            </Typography>
-            <Grid container spacing={3}>
-                {servicios.map(servicio => (
-                    <Grid item xs={12} sm={6} md={4} lg={3} key={servicio.id}>
-                        <Card elevation={3}>
-                            <CardMedia 
-                                component="img"
-                                height="250"
-                                image={servicio.image}
-                                alt={servicio.title}
-                            />
-                            <CardContent>
-                                <Typography variant="h6" gutterBottom style={{ color: servicio.color }}>
-                                    {servicio.title}
-                                </Typography>
-                                <Typography variant="body2" color="textSecondary" paragraph style={{ color: servicio.color }}>
-                                    {servicio.description}
-                                </Typography>
-                                <Typography variant="subtitle1" style={{ color: servicio.color }}>
-                                    {servicio.price}
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                ))}
+      <Container>
+        <Typography variant="h4" gutterBottom style={{ color: 'white' }}>
+          Nuestros Servicios
+        </Typography>
+        <Typography variant="subtitle1" paragraph style={{ color: 'white' }}>
+          Ofrecemos una variedad de servicios para satisfacer tus necesidades.
+        </Typography>
+        <Grid container spacing={3}>
+          {servicios.map(servicio => (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={servicio.id}>
+              <Card className={classes.card} elevation={3}>
+                <CardMedia 
+                  className={classes.media}
+                  component="img"
+                  height="250"
+                  image={servicio.image}
+                  alt={servicio.title}
+                />
+                <CardContent className={classes.content}>
+                  <Typography variant="h6" gutterBottom style={{ color: servicio.color }}>
+                    {servicio.title}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" paragraph>
+                    {servicio.description}
+                  </Typography>
+                  <Typography className={classes.price} variant="subtitle1">
+                    {servicio.price}
+                  </Typography>
+                </CardContent>
+              </Card>
             </Grid>
-            <SocialMediaButtons />
-        </Container>
+          ))}
+        </Grid>
+        <SocialMediaButtons />
+      </Container>
     );
-}
-
-export default Servicios;
+  }
+  
+  export default Servicios;

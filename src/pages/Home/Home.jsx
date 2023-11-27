@@ -6,6 +6,9 @@ import SocialMediaButtons from '../Servicios/images/SocialMediaButtons';
 import imagen10 from "./images/Moroccanoil.jpg";
 import imagen11 from "./images/marca2.jpg";
 import imagen12 from "./images/marca3.jpg";
+
+
+
 function Home() {
     return (
         <Container>
@@ -33,11 +36,10 @@ function Home() {
                     <Paper elevation={3} style={{ padding: '20px' }}>
                         <img src= {imagen10} alt="Imagen Ejemplo 1" style={{ width: '100%', borderRadius: '10px' }} />
                         <Typography variant="h6" gutterBottom>
-                            Titulo 1
+                            
                         </Typography>
                         <Typography variant="body2">
                             
-                            Este es un espacio para texto. Puedes llenar este espacio con información adicional.
                         </Typography>
                     </Paper>
                 </Grid>
@@ -45,10 +47,10 @@ function Home() {
                     <Paper elevation={3} style={{ padding: '20px' }}>
                         <img src= {imagen11} alt="Imagen Ejemplo 2" style={{ width: '100%', borderRadius: '10px' }} />
                         <Typography variant="h6" gutterBottom>
-                            Titulo 2
+                            
                         </Typography>
                         <Typography variant="body2">
-                            Este es otro espacio para texto. Puedes llenar este espacio con más información.
+                            
                         </Typography>
                     </Paper>
                 </Grid>
@@ -56,10 +58,10 @@ function Home() {
                     <Paper elevation={3} style={{ padding: '20px' }}>
                         <img src= {imagen12} alt="Imagen Ejemplo 3" style={{ width: '100%', borderRadius: '10px' }} />
                         <Typography variant="h6" gutterBottom>
-                            Titulo 3
+                            
                         </Typography>
                         <Typography variant="body2">
-                            Aquí va más texto. Este es un buen lugar para poner información adicional.
+                            
                         </Typography>
                     </Paper>
                 </Grid>

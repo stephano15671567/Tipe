@@ -12,9 +12,29 @@ import producto9 from './images/producto9.jpg';
 import producto10 from './images/producto10.jpg';
 import producto11 from './images/producto11.jpg';
 import producto12 from './images/producto12.jpg';
-import producto13 from './images/producto13.jpg';
+
 import SocialMediaButtons from '../Servicios/images/SocialMediaButtons';
 // ... Continuar importando todas las imágenes de productos necesarias
+import { makeStyles } from '@mui/styles'; // Make sure to import this
+
+const useStyles = makeStyles({
+    card: {
+      display: 'flex', // Add display flex to card
+      flexDirection: 'column', // Stack children vertically
+      height: '100%', // Make card take full height of its parent
+    },
+    media: {
+      height: 140, // Set a fixed height for the media
+    },
+    content: {
+      flex: 1, // Flex grow to take available space
+      display: 'flex', // Add display flex to content
+      flexDirection: 'column', // Stack children vertically
+    },
+    price: {
+      marginTop: 'auto', // Push the price to the bottom
+    },
+  });
 
 const productos = [
     {
@@ -118,43 +138,44 @@ const productos = [
 ];
 
 function Productos() {
+    const classes = useStyles(); // Call useStyles to get the classes object
+  
     return (
-        <Container>
-            <Typography variant="h4" gutterBottom style={{ color: 'white' }}>
-                Nuestros Productos
-            </Typography>
-            <Typography variant="subtitle1" paragraph style={{ color: 'white' }}>
-                Descubre nuestra exclusiva gama de productos de calidad.
-            </Typography>
-            <Grid container spacing={3}>
-                {productos.map(producto => (
-                    <Grid item xs={12} sm={6} md={4} lg={3} key={producto.id}>
-                        <Card elevation={3}>
-                            <CardMedia 
-                                component="img"
-                                height="250"
-                                image={producto.image}
-                                alt={producto.title}
-                            />
-                            <CardContent>
-                                <Typography variant="h6" gutterBottom style={{ color: producto.color }}>
-                                    {producto.title}
-                                </Typography>
-                                <Typography variant="body2" color="textSecondary" paragraph style={{ color: producto.color }}>
-                                    {producto.description}
-                                </Typography>
-                                <Typography variant="subtitle1" style={{ color: producto.color }}>
-                                    {producto.price}
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                ))}
+      <Container>
+        <Typography variant="h4" gutterBottom style={{ color: 'white' }}>
+          Nuestros Productos
+        </Typography>
+        <Typography variant="subtitle1" paragraph style={{ color: 'white' }}>
+          Descubre nuestra exclusiva gama de productos de calidad.
+        </Typography>
+        <Grid container spacing={3}>
+          {productos.map((producto) => (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={producto.id}>
+              <Card className={classes.card} elevation={3}>
+                <CardMedia
+                  className={classes.media}
+                  component="img"
+                  image={producto.image}
+                  alt={producto.title}
+                />
+                <CardContent className={classes.content}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    {producto.title}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    {producto.description}
+                  </Typography>
+                  <Typography className={classes.price} variant="h6">
+                    {producto.price}
+                  </Typography>
+                </CardContent>
+              </Card>
             </Grid>
-            <SocialMediaButtons />
-        </Container>
+          ))}
+        </Grid>
+        <SocialMediaButtons />
+      </Container>
     );
-}
-
-export default Productos;
-
+  }
+  
+  export default Productos;

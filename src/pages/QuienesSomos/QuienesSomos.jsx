@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   Typography,
@@ -17,41 +16,47 @@ import { makeStyles } from '@mui/styles';
 import SocialMediaButtons from '../Servicios/images/SocialMediaButtons'; // Importación ajustada
 
 const useStyles = makeStyles({
-    container: {
-        display: 'flex',
-        alignItems: 'center',
-        backgroundColor: '#fff',
-        borderRadius: '10px',
-        overflow: 'hidden',
-        margin: '20px 0',
+  container: {
+    display: 'flex',
+    alignItems: 'stretch', // Changed to 'stretch' to align items vertically
+    backgroundColor: '#fff',
+    borderRadius: '10px',
+    overflow: 'hidden',
+    margin: '20px 0',
+    '@media (max-width: 600px)': {
+      flexDirection: 'column',
     },
-    textBox: {
-        color: 'rgb(255, 132, 203)',
-        padding: '20px',
-        flex: 1,
-    },
-    imageBox: {
-        flexBasis: '40%',
-    },
-    image: {
-        width: '100%',
-        height: 'auto',
-        display: 'block',
-    },
-    list: {
-        marginTop: '20px',
-    },
-    listItem: {
-        paddingLeft: 0,
-    },
-    socialMediaContainer: {
-        display: 'flex',
-        justifyContent: 'center',
-        marginTop: '20px',
-    },
-    socialMediaButton: {
-        margin: '0 10px',
-    },
+  },
+  textBox: {
+    color: 'rgb(255, 132, 203)',
+    padding: '20px',
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center', // This will vertically center the text
+  },
+  imageBox: {
+    flexBasis: '40%',
+  },
+  image: {
+    width: '100%',
+    height: 'auto',
+    display: 'block',
+  },
+  list: {
+    marginTop: '20px',
+  },
+  listItem: {
+    paddingLeft: 0,
+  },
+  socialMediaContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '20px',
+  },
+  socialMediaButton: {
+    margin: '0 10px',
+  },
 });
 
 function QuienesSomos() {
