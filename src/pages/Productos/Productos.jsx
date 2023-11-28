@@ -136,7 +136,7 @@ const productos = [
     
     // ... Agregar más productos según sea necesario
 ];
-
+//xs
 function Productos() {
     const classes = useStyles(); // Call useStyles to get the classes object
   
